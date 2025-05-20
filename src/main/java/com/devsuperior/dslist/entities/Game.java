@@ -1,6 +1,11 @@
-package com.devsuperior.dslist;
+package com.devsuperior.dslist.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.util.Objects;
 
@@ -22,7 +27,7 @@ public class Game {
 
     @Column(columnDefinition = "TEXT")
     private String shortDescription;
-    
+
     @Column(columnDefinition = "TEXT")
     private String longDescription;
 
